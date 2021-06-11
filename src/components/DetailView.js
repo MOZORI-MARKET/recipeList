@@ -12,12 +12,12 @@ const DetailView = ({match, history}) => {
   const {title, artist, createAt, collector, contents, imgSrc} = detail;
   return (
     <>
-      <View>
-        <Button onPress={handleBack} title="Back" />
+      <View style={styles.container}>
+        <Text style={styles.heading}>{title}레시피</Text>
+        <Text style={styles.subheading}>방구석 {artist}님</Text>
+        <Button style={styles.backButton} onPress={handleBack} title="X" />
       </View>
       <View style={styles.container}>
-        <Text style={styles.heading}>{title}</Text>
-        <Text style={styles.subheading}>{artist}</Text>
         <Image style={styles.img} source={imgSrc} />
         <View style={styles.subcontainer}>
           <Text>CreateAt: {createAt}</Text>
@@ -35,10 +35,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'column',
   },
+  backButton: {
+    backgroundColor: 'white',
+    color: '#959595',
+  },
   heading: {
     marginTop: 20,
     fontSize: 24,
     fontWeight: '600',
+    alignContent: 'center',
   },
   subheading: {
     fontSize: 18,
@@ -55,5 +60,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
 });
+
 export default DetailView;
 
