@@ -24,9 +24,9 @@ const DetailView = ({match, history}) => {
       <View style={styles.container}>
         <Image style={styles.img} source={imgSrc} />
         <View style={styles.subcontainer}>
-          <Text>작성 날짜: {createAt}</Text>
-          <Text>가격: {collector}</Text>
-          <Text>{contents}</Text>
+          <Text>작성 번호: {createAt}</Text>
+          <Text style={styles.title}>MOZORI PICK!: {collector}</Text>
+          <Text style={styles.contents}>{contents}</Text>
         </View>
       </View>
     </>
@@ -52,8 +52,16 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   subcontainer: {
-    marginTop: 10,
+    margin: 40,
     alignItems: 'flex-start',
+  },
+  title: {
+    fontSize: 18,
+    marginBottom: 10,
+    marginTop: 10,
+  },
+  contents:{
+    fontSize: 18,
   },
   img: {
     height: (deviceWidth * 2) / 2.5,
