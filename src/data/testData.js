@@ -1,26 +1,26 @@
 export const data = [
     {
       id: 1,
-      title: 'The-Starry-Night',
-      artist: 'Vincent van Gogh',
-      createAt: 1889,
+      title: 'The Cathedral',
+      artist: 'František Kupka',
+      createAt: 1913,
       collector: 'MoMA New York',
       contents:
-        '만든 위치: Saint-Rémy-de-Provence\n' +
-        '크기: w921 x h737 mm\n' +
+        '재료: 계란 3개\n' +
+        '조리 시간 : 5분\n' +
         'Style: Post-Impressionism\n' +
         'Provenance: Acquired through the Lillie P.Bliss Bequest\n' +
         'Original Title: La nuit étoilée',
-      imgSrc: require('../imgs/img1.png'),
+      imgSrc: require('../imgs/img1.jpg'),
     },
     {
       id: 2,
-      title: 'Sunflowers',
-      artist: 'Vincent van Gogh',
-      createAt: 1889,
+      title: 'The Cathedral',
+      artist: 'František Kupka',
+      createAt: 1913,
       collector: 'Van Gogh Museum Amsterdam',
       contents:
-        '만든 위치: Arles\n' +
+        '재료: 파스타 100g, 불고기 200g,\n' +
         '크기: w73 cm x h95 cm\n' +
         '작품유형: Still life\n',
       imgSrc: require('../imgs/img2.jpg'),
