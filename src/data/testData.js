@@ -1,9 +1,9 @@
 export const data = [
     {
       id: 1,
-      title: 'The Cathedral',
-      artist: 'František Kupka',
-      createAt: 1913,
+      title: '김치볶음밥',
+      artist: '이주연',
+      createAt: 1122,
       collector: 'MoMA New York',
       contents:
         '재료: 계란 3개\n' +
@@ -15,8 +15,8 @@ export const data = [
     },
     {
       id: 2,
-      title: 'The Cathedral',
-      artist: 'František Kupka',
+      title: '딸기바나나크라페',
+      artist: '오채은',
       createAt: 1913,
       collector: 'Van Gogh Museum Amsterdam',
       contents:
@@ -27,8 +27,8 @@ export const data = [
     },
     {
       id: 3,
-      title: 'The Cathedral',
-      artist: 'František Kupka',
+      title: '김치말이국수',
+      artist: '심지윤',
       createAt: 1913,
       collector: 'Museum Kampa Prague',
       contents:
@@ -41,8 +41,8 @@ export const data = [
     },
     {
       id: 4,
-      title: 'Still Life with Flowers and Fruit',
-      artist: 'Paul Cézanne',
+      title: '버섯파스타',
+      artist: '김승언',
       createAt: 1890,
       collector: 'Alte Nationalgalerie, Staatliche Museen zu Berlin',
       contents:
@@ -53,8 +53,8 @@ export const data = [
     },
     {
         id: 5,
-        title: 'Still Life with Flowers and Fruit',
-        artist: 'Paul Cézanne',
+        title: '모히또',
+        artist: '이윤지',
         createAt: 1890,
         collector: 'Alte Nationalgalerie, Staatliche Museen zu Berlin',
         contents:

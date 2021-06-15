@@ -29,6 +29,23 @@ const topBar = StyleSheet.create({
         marginTop: 1,
         color: 'black',
     },
+    filterButton: {
+        paddingRight: 10,
+        paddingLeft: 10,
+        paddingTop: 5,
+        paddingBottom: 5,
+        marginTop: 10,
+        marginLeft: 10,
+        backgroundColor: 'white',
+        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: '#595959',
+      },
+    filterText: {
+        fontSize: 14,
+        color: '#595959',
+        textAlign: 'center',
+    }
 });
 
 export default TopBar;

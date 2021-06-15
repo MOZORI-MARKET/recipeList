@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text, Button, Image, Dimensions} from 'react-native';
+import {View, StyleSheet, Text, Image, Dimensions, TouchableHighlight} from 'react-native';
 import {data} from '../data/testData';
 
 const deviceWidth = Dimensions.get('window').width;
@@ -12,16 +12,20 @@ const DetailView = ({match, history}) => {
   const {title, artist, createAt, collector, contents, imgSrc} = detail;
   return (
     <>
-      <View style={styles.container}>
-        <Text style={styles.heading}>{title}레시피</Text>
-        <Text style={styles.subheading}>방구석 {artist}님</Text>
-        <Button style={styles.backButton} onPress={handleBack} title="X" />
+    <View style={styles.top}>
+        <View style={styles.container}>
+          <Text style={styles.heading}>{title}레시피</Text>
+          <Text style={styles.subheading}>방구석 {artist}님</Text>
+          <TouchableHighlight onPress={handleBack}>
+            <Text style={styles.filterText}>뒤로가기</Text>
+          </TouchableHighlight>
+        </View>
       </View>
       <View style={styles.container}>
         <Image style={styles.img} source={imgSrc} />
         <View style={styles.subcontainer}>
-          <Text>CreateAt: {createAt}</Text>
-          <Text>Collector: {collector}</Text>
+          <Text>작성 날짜: {createAt}</Text>
+          <Text>가격: {collector}</Text>
           <Text>{contents}</Text>
         </View>
       </View>
@@ -35,10 +39,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'column',
   },
-  backButton: {
-    backgroundColor: 'white',
-    color: '#959595',
-  },
   heading: {
     marginTop: 20,
     fontSize: 24,
@@ -48,17 +48,25 @@ const styles = StyleSheet.create({
   subheading: {
     fontSize: 18,
     fontWeight: '600',
-    marginBottom: 30,
+    marginTop: 7,
+    marginBottom: 10,
   },
   subcontainer: {
-    margin: 30,
+    marginTop: 10,
     alignItems: 'flex-start',
   },
   img: {
-    height: (deviceWidth * 2) / 3,
-    width: (deviceWidth * 2) / 3,
+    height: (deviceWidth * 2) / 2.5,
+    width: (deviceWidth * 2) / 2.5,
     borderRadius: 20,
   },
+filterText: {
+    flex:1,
+    marginBottom: 10,
+    fontSize: 14,
+    color: '#595959',
+    textAlign: 'center',
+}
 });
 
 export default DetailView;
